@@ -1,12 +1,18 @@
 #!/bin/bash
 
+function is_number()
+{
+    re='^[+-]?[0-9]+([.][0-9]+)?$'
+    if ! [[ $1 =~ $re ]] ; then
+        echo 1
+    else
+        echo 0
+    fi
+}
 
 
-if is_number $1  ; then 
+if [ is_number $1 ] ; then
     echo "C'est un nombre"
-else 
+else
     echo "C'est pas un nombre"
 fi
-for((i=0;i<n;i++)); do
-    echo "$i"
-done

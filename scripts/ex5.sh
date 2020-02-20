@@ -1,12 +1,12 @@
 #!/bin/bash
 
-read -p "Please enter a integer: " n
+read -p "Please enter a integer: " end
 
-start=1
+nb=1
 
-for((i=1;i<=n;i++)); do
-    start="$((start*i))"
+for ((i=1;i<=end;i++)); do
+    nb="$((nb*i))"
 done
 
-echo $start
+echo $nb
 
