@@ -1,3 +1,7 @@
+## Programmation Bash
+
+`export PATH=$PATH:/mnt/projects/Cpe/S6/Linux/Tp2/scripts` 
+
 ## EX 1
 
 1. Bash trouve les commandes dans les dossiers présents dans la variable d'environnement $PATH

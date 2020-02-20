@@ -36,7 +36,7 @@ Ajoutez le chemin vers script à votre PATH de manière permanente.
 ## Exercice 2. Contrôle de mot de passe
 
 Écrivez un script **testpwd.sh** qui demande de saisir un mot de passe et vérifie s’il correspond ou non au
-contenu d’une variablePASSWORDdont le contenu est codé en dur dans le script. Le mot de passe saisi par
+contenu d’une variable `PASSWORD` dont le contenu est codé en dur dans le script. Le mot de passe saisi par
 l’utilisateur ne doit pas s’aﬀicher.
 
 ## Exercice 3. Expressions rationnelles
@@ -48,13 +48,13 @@ est un nombre réel :
 
 function is_number()
 {
-re='^[+-]?[0-9]+([.][0-9]+)?$'
+    re='^[+-]?[0-9]+([.][0-9]+)?$'
 
-if! [[ $1 =~ $re ]] ; then
-return 1
-else
-return 0
-fi
+    if! [[ $1 =~ $re ]] ; then
+    return 1
+    else
+    return 0
+    fi
 }
 
 ```
